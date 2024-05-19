@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="layout-css.css">
+    <title>Navigation Bar</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="#">MyWebsite</a>
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#">About</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
+            <li class="nav-item">
+                <select class="dropdown" onchange="location = this.value;">
+                    <option value="#" disabled selected>Services</option>
+                    <option value="web-design.html">Web Design</option>
+                    <option value="seo.html">SEO</option>
+                    <option value="marketing.html">Marketing</option>
+                </select>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
