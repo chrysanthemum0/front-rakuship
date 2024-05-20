@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{app.config}}</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h1>RakuShip.</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ route('items.index') }}">ホームへ</a></li>
+                    <li><a href="#">マイページ</a></li>
+                    <li><a href="#">私の注文</a></li>
+                    <li><a href="#">Reset Password</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <div class="profile-wrapper">
+                <h1>User Profile</h1>
+                <h2>ようこそ、Username</h2>
+                <div class="profile">
+                    <form action="" method="post">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" value="username">
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" value="email@domain.com">
+
+                        <label for="bio">自己紹介</label>
+                        <textarea id="bio" name="bio"></textarea>
+
+                        <button type="submit">Save changes</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
